@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94F36D3D233E9B1500919AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F36D3C233E9B1500919AF9 /* AppDelegate.swift */; };
+		94F36D3F233E9B1500919AF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F36D3E233E9B1500919AF9 /* ViewController.swift */; };
+		94F36D41233E9B1600919AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F36D40233E9B1600919AF9 /* Assets.xcassets */; };
+		94F36D44233E9B1600919AF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F36D42233E9B1600919AF9 /* Main.storyboard */; };
+		94F36D50233E9B1700919AF9 /* ZippyClippyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F36D4F233E9B1700919AF9 /* ZippyClippyTests.swift */; };
+		94F36D5B233E9B1700919AF9 /* ZippyClippyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F36D5A233E9B1700919AF9 /* ZippyClippyUITests.swift */; };
+		94F36D6923456CE600919AF9 /* DragReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F36D6823456CE600919AF9 /* DragReceiver.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94F36D4C233E9B1700919AF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94F36D31233E9B1500919AF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94F36D38233E9B1500919AF9;
+			remoteInfo = ZippyClippy;
+		};
+		94F36D57233E9B1700919AF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94F36D31233E9B1500919AF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94F36D38233E9B1500919AF9;
+			remoteInfo = ZippyClippy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		94F36D39233E9B1500919AF9 /* ZippyClippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZippyClippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F36D3C233E9B1500919AF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94F36D3E233E9B1500919AF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94F36D40233E9B1600919AF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94F36D43233E9B1600919AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94F36D45233E9B1600919AF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F36D46233E9B1600919AF9 /* ZippyClippy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZippyClippy.entitlements; sourceTree = "<group>"; };
+		94F36D4B233E9B1700919AF9 /* ZippyClippyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZippyClippyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F36D4F233E9B1700919AF9 /* ZippyClippyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZippyClippyTests.swift; sourceTree = "<group>"; };
+		94F36D51233E9B1700919AF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F36D56233E9B1700919AF9 /* ZippyClippyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZippyClippyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F36D5A233E9B1700919AF9 /* ZippyClippyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZippyClippyUITests.swift; sourceTree = "<group>"; };
+		94F36D5C233E9B1700919AF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F36D6823456CE600919AF9 /* DragReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragReceiver.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94F36D36233E9B1500919AF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F36D48233E9B1700919AF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F36D53233E9B1700919AF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94F36D30233E9B1500919AF9 = {
+			isa = PBXGroup;
+			children = (
+				94F36D3B233E9B1500919AF9 /* ZippyClippy */,
+				94F36D4E233E9B1700919AF9 /* ZippyClippyTests */,
+				94F36D59233E9B1700919AF9 /* ZippyClippyUITests */,
+				94F36D3A233E9B1500919AF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94F36D3A233E9B1500919AF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94F36D39233E9B1500919AF9 /* ZippyClippy.app */,
+				94F36D4B233E9B1700919AF9 /* ZippyClippyTests.xctest */,
+				94F36D56233E9B1700919AF9 /* ZippyClippyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94F36D3B233E9B1500919AF9 /* ZippyClippy */ = {
+			isa = PBXGroup;
+			children = (
+				94F36D3C233E9B1500919AF9 /* AppDelegate.swift */,
+				94F36D3E233E9B1500919AF9 /* ViewController.swift */,
+				94F36D6823456CE600919AF9 /* DragReceiver.swift */,
+				94F36D40233E9B1600919AF9 /* Assets.xcassets */,
+				94F36D42233E9B1600919AF9 /* Main.storyboard */,
+				94F36D45233E9B1600919AF9 /* Info.plist */,
+				94F36D46233E9B1600919AF9 /* ZippyClippy.entitlements */,
+			);
+			path = ZippyClippy;
+			sourceTree = "<group>";
+		};
+		94F36D4E233E9B1700919AF9 /* ZippyClippyTests */ = {
+			isa = PBXGroup;
+			children = (
+				94F36D4F233E9B1700919AF9 /* ZippyClippyTests.swift */,
+				94F36D51233E9B1700919AF9 /* Info.plist */,
+			);
+			path = ZippyClippyTests;
+			sourceTree = "<group>";
+		};
+		94F36D59233E9B1700919AF9 /* ZippyClippyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94F36D5A233E9B1700919AF9 /* ZippyClippyUITests.swift */,
+				94F36D5C233E9B1700919AF9 /* Info.plist */,
+			);
+			path = ZippyClippyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94F36D38233E9B1500919AF9 /* ZippyClippy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94F36D5F233E9B1700919AF9 /* Build configuration list for PBXNativeTarget "ZippyClippy" */;
+			buildPhases = (
+				94F36D35233E9B1500919AF9 /* Sources */,
+				94F36D36233E9B1500919AF9 /* Frameworks */,
+				94F36D37233E9B1500919AF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZippyClippy;
+			productName = ZippyClippy;
+			productReference = 94F36D39233E9B1500919AF9 /* ZippyClippy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94F36D4A233E9B1700919AF9 /* ZippyClippyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94F36D62233E9B1700919AF9 /* Build configuration list for PBXNativeTarget "ZippyClippyTests" */;
+			buildPhases = (
+				94F36D47233E9B1700919AF9 /* Sources */,
+				94F36D48233E9B1700919AF9 /* Frameworks */,
+				94F36D49233E9B1700919AF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94F36D4D233E9B1700919AF9 /* PBXTargetDependency */,
+			);
+			name = ZippyClippyTests;
+			productName = ZippyClippyTests;
+			productReference = 94F36D4B233E9B1700919AF9 /* ZippyClippyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94F36D55233E9B1700919AF9 /* ZippyClippyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94F36D65233E9B1700919AF9 /* Build configuration list for PBXNativeTarget "ZippyClippyUITests" */;
+			buildPhases = (
+				94F36D52233E9B1700919AF9 /* Sources */,
+				94F36D53233E9B1700919AF9 /* Frameworks */,
+				94F36D54233E9B1700919AF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94F36D58233E9B1700919AF9 /* PBXTargetDependency */,
+			);
+			name = ZippyClippyUITests;
+			productName = ZippyClippyUITests;
+			productReference = 94F36D56233E9B1700919AF9 /* ZippyClippyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94F36D31233E9B1500919AF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Robert Horrion";
+				TargetAttributes = {
+					94F36D38233E9B1500919AF9 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					94F36D4A233E9B1700919AF9 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 94F36D38233E9B1500919AF9;
+					};
+					94F36D55233E9B1700919AF9 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 94F36D38233E9B1500919AF9;
+					};
+				};
+			};
+			buildConfigurationList = 94F36D34233E9B1500919AF9 /* Build configuration list for PBXProject "ZippyClippy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94F36D30233E9B1500919AF9;
+			productRefGroup = 94F36D3A233E9B1500919AF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94F36D38233E9B1500919AF9 /* ZippyClippy */,
+				94F36D4A233E9B1700919AF9 /* ZippyClippyTests */,
+				94F36D55233E9B1700919AF9 /* ZippyClippyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94F36D37233E9B1500919AF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F36D41233E9B1600919AF9 /* Assets.xcassets in Resources */,
+				94F36D44233E9B1600919AF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F36D49233E9B1700919AF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F36D54233E9B1700919AF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94F36D35233E9B1500919AF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F36D3F233E9B1500919AF9 /* ViewController.swift in Sources */,
+				94F36D3D233E9B1500919AF9 /* AppDelegate.swift in Sources */,
+				94F36D6923456CE600919AF9 /* DragReceiver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F36D47233E9B1700919AF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F36D50233E9B1700919AF9 /* ZippyClippyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F36D52233E9B1700919AF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F36D5B233E9B1700919AF9 /* ZippyClippyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94F36D4D233E9B1700919AF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94F36D38233E9B1500919AF9 /* ZippyClippy */;
+			targetProxy = 94F36D4C233E9B1700919AF9 /* PBXContainerItemProxy */;
+		};
+		94F36D58233E9B1700919AF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94F36D38233E9B1500919AF9 /* ZippyClippy */;
+			targetProxy = 94F36D57233E9B1700919AF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94F36D42233E9B1600919AF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94F36D43233E9B1600919AF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94F36D5D233E9B1700919AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94F36D5E233E9B1700919AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		94F36D60233E9B1700919AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZippyClippy/ZippyClippy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q2CS3FBVAU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ZippyClippy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roberthorrion.ZippyClippy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		94F36D61233E9B1700919AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZippyClippy/ZippyClippy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q2CS3FBVAU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ZippyClippy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roberthorrion.ZippyClippy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		94F36D63233E9B1700919AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q2CS3FBVAU;
+				INFOPLIST_FILE = ZippyClippyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roberthorrion.ZippyClippyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZippyClippy.app/Contents/MacOS/ZippyClippy";
+			};
+			name = Debug;
+		};
+		94F36D64233E9B1700919AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q2CS3FBVAU;
+				INFOPLIST_FILE = ZippyClippyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roberthorrion.ZippyClippyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZippyClippy.app/Contents/MacOS/ZippyClippy";
+			};
+			name = Release;
+		};
+		94F36D66233E9B1700919AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q2CS3FBVAU;
+				INFOPLIST_FILE = ZippyClippyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roberthorrion.ZippyClippyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ZippyClippy;
+			};
+			name = Debug;
+		};
+		94F36D67233E9B1700919AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q2CS3FBVAU;
+				INFOPLIST_FILE = ZippyClippyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roberthorrion.ZippyClippyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ZippyClippy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94F36D34233E9B1500919AF9 /* Build configuration list for PBXProject "ZippyClippy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F36D5D233E9B1700919AF9 /* Debug */,
+				94F36D5E233E9B1700919AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94F36D5F233E9B1700919AF9 /* Build configuration list for PBXNativeTarget "ZippyClippy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F36D60233E9B1700919AF9 /* Debug */,
+				94F36D61233E9B1700919AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94F36D62233E9B1700919AF9 /* Build configuration list for PBXNativeTarget "ZippyClippyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F36D63233E9B1700919AF9 /* Debug */,
+				94F36D64233E9B1700919AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94F36D65233E9B1700919AF9 /* Build configuration list for PBXNativeTarget "ZippyClippyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F36D66233E9B1700919AF9 /* Debug */,
+				94F36D67233E9B1700919AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94F36D31233E9B1500919AF9 /* Project object */;
+}
