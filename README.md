@@ -15,7 +15,7 @@ Currently Windows 10 and macOS 10.14 are supported. Pick a client for macOS or W
 ## Azure function
 
 ## Mac Client
-[Click here](./Mac\ -\ ZippyClippy) to find the macOS client. 
+[Click here](./Mac-ZippyClippy) to find the macOS client. 
 
 macOS 10.14 is currently the only tested version. Other versions might work. 
 
