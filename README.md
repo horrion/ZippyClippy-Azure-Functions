@@ -83,6 +83,10 @@ macOS 10.14 is currently the only tested version. Other versions might work.
 
 ## Windows Client
 
+[Click here](./Windows-ZippyClippy) to find the Windows client. 
+
+Windows 10 is currently the only tested version. Other versions might work. 
+
 ## License
 
 [MIT License](./LICENSE.md)
