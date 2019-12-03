@@ -100,11 +100,94 @@ class DragReceiver: NSView {
     func processFileUploads(_ urls: [URL]) {
         print("Files selected: ", urls)
         
+        
+        
         let fileName = urls[0].deletingPathExtension().lastPathComponent
         let fileNameExtension = urls[0].pathExtension
         
         print("file Name: " + fileName)
         print("file extension: " + fileNameExtension)
+        
+        
+        let headers = [
+          "Accept": "*/*",
+          "Cache-Control": "no-cache",
+          "Host": "zippyclippy.azurewebsites.net",
+          "Accept-Encoding": "gzip, deflate",
+          "Connection": "keep-alive",
+          "cache-control": "no-cache"
+        ]
+
+        let urlString =  "https://zippyclippy.azurewebsites.net/api/ZippyClippy?fileName=" + fileName + "&fileNameExtension=" + fileNameExtension + "&code=4j5Vxza6unwHKftLx0rm5YdDqVv08EL8jQ0FuBC9lXXR0OAOVe9ITA=="
+        
+        
+        let request = NSMutableURLRequest(url: NSURL(string: urlString)! as URL,
+                                                cachePolicy: .useProtocolCachePolicy,
+                                            timeoutInterval: 10.0)
+        request.httpMethod = "POST"
+        request.allHTTPHeaderFields = headers
+
+        do {
+            let data = try Data(contentsOf: urls[0])
+            
+            request.httpBody = data
+            
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        //request.httpBody = Data(contentsOf: urls[0])
+
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+          if (error != nil) {
+            print(error!)
+          } else {
+            let httpResponse = response as? HTTPURLResponse
+
+            //Get binary here and save to disk
+            var outputFileURL = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first!
+
+            outputFileURL.appendPathComponent("output")
+            outputFileURL.appendPathExtension("zip")
+
+
+            do {
+                try //FileManager.default.createDirectory(at: downloadsDirectoryWithFolder, withIntermediateDirectories: true, attributes: nil)
+                data?.write(to: outputFileURL)
+                print("successfully wrote to Downloads")
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+
+            print(httpResponse!)
+          }
+        })
+
+        dataTask.resume()
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -131,5 +214,9 @@ class DragReceiver: NSView {
         
         
     }
+    
+    
+    
+    
     
 }

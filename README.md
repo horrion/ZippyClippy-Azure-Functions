@@ -7,21 +7,26 @@ Learn to create and consume Azure functions with Clippy
 You'll need
 
 - [Postman](https://www.getpostman.com)
-- [A GitHub account](https://github.com/login)
-- A git client of your choice. I like [GitKraken](https://www.gitkraken.com).
+- [Visual Studio Code](https://code.visualstudio.com)
 - Access to Azure
 
 ### Mac
 
 - [Xcode](https://developer.apple.com/xcode/resources/)
-- [Visual Studio Code](https://code.visualstudio.com)
 - [Homebrew](https://brew.sh)
 - Python3 (install: `brew install python`)
 - Azure funtions core tools (install: `brew tap azure/functions` then `brew install azure-functions-core-tools`)
+- PowerShell (install: `brew cask install powershell`)
+- Az PowerShell Module (install in PowerShell: `Install-Module -Name Az -AllowClobber -Scope CurrentUser`)
 
 ### Windows
 
 - [Visual Studio](https://visualstudio.microsoft.com/vs/)
+- [Node.js with NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [Python3](https://www.python.org/downloads/windows/)
+- Azure functions core tools (install: `npm install -g azure-functions-core-tools`)
+- PowerShell
+- Az PowerShell Module (install in PowerShell: `Install-Module -Name Az -AllowClobber -Scope CurrentUser`)
 
 ## Getting Started
 Currently Windows 10 and macOS 10.14 are supported. To get started, clone or download this repository. 
@@ -47,8 +52,6 @@ Body
 
 ### Start from scratch
 
-#### Mac
-
 Make sure all required software is downloaded and installed. Next, open Terminal and `cd` to the correct directory. 
 Then paste the following command. Make sure to replace `<FunctionAppName>` with your own function app name. We'll use `ZippyClippy` as a function app name in my workshop. 
 `func init <FunctionAppName> --worker-runtime python`
@@ -59,21 +62,18 @@ Run `func new` to create a new function. When asked, choose `HTTP trigger`, then
 
 Now open `__init__.py` in Visual Studio Code to edit the function. 
 
-#### Windows
-
-
 ### Debugging the function
-
-#### Mac
 
 run `func host start`
 
 Use Postman to test the function. The URL will be provided in Terminal. 
 
-#### Windows
-
 ### Deploy
 
+Create a function app in Azure portal, then open a PowerShell session (Mac: `pwsh` in Terminal). Connect to Azure Account using Az Cmdlet: `Connect-AzAccount`
+
+then run
+`func azure functionapp publish ZippyClippy`
 
 ## Mac Client
 
