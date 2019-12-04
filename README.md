@@ -29,6 +29,7 @@ You'll need
 - Az PowerShell Module (install in PowerShell: `Install-Module -Name Az -AllowClobber -Scope CurrentUser`)
 
 ## Getting Started
+
 Currently Windows 10 and macOS 10.14 are supported. To get started, clone or download this repository. 
 
 ## Azure function
