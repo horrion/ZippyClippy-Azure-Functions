@@ -1,0 +1,9 @@
+C:\Users\robert\Desktop\Windows-ZippyClippy\ZippyClippy\ZippyClippy\bin\Debug\ZippyClippy.exe.config
+C:\Users\robert\Desktop\Windows-ZippyClippy\ZippyClippy\ZippyClippy\bin\Debug\ZippyClippy.exe
+C:\Users\robert\Desktop\Windows-ZippyClippy\ZippyClippy\ZippyClippy\bin\Debug\ZippyClippy.pdb
+C:\Users\robert\Desktop\Windows-ZippyClippy\ZippyClippy\ZippyClippy\obj\Debug\ZippyClippy.csprojAssemblyReference.cache
+C:\Users\robert\Desktop\Windows-ZippyClippy\ZippyClippy\ZippyClippy\obj\Debug\ZippyClippy.Form1.resources
+C:\Users\robert\Desktop\Windows-ZippyClippy\ZippyClippy\ZippyClippy\obj\Debug\ZippyClippy.Properties.Resources.resources
+C:\Users\robert\Desktop\Windows-ZippyClippy\ZippyClippy\ZippyClippy\obj\Debug\ZippyClippy.csproj.GenerateResource.cache
+C:\Users\robert\Desktop\Windows-ZippyClippy\ZippyClippy\ZippyClippy\obj\Debug\ZippyClippy.exe
+C:\Users\robert\Desktop\Windows-ZippyClippy\ZippyClippy\ZippyClippy\obj\Debug\ZippyClippy.pdb
