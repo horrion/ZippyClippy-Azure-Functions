@@ -33,9 +33,19 @@ namespace ZippyClippy
             var sourceFile = File.ReadAllBytes(filePathForUpload);
 
             // Build the URL String for the REST request here
-            var urlForHTTPRequest = "";
+            var urlForHTTPRequest = "https://zippyclippy.azurewebsites.net/api/ZippyClippy?fileName="+ fileName +"&fileNameExtension="+ fileNameExtension +"&code=4j5Vxza6unwHKftLx0rm5YdDqVv08EL8jQ0FuBC9lXXR0OAOVe9ITA==";
 
-            
+            var client = new RestClient(urlForHTTPRequest);
+            var request = new RestRequest(Method.POST);
+            request.AddHeader("cache-control", "no-cache");
+            request.AddHeader("Connection", "keep-alive");
+            request.AddHeader("Accept-Encoding", "gzip, deflate");
+            request.AddHeader("Host", "zippyclippy.azurewebsites.net");
+            request.AddHeader("Cache-Control", "no-cache");
+            request.AddHeader("Accept", "*/*");
+            request.AddParameter("image/jpg", sourceFile, ParameterType.RequestBody);
+
+            IRestResponse response = client.Execute(request);
 
             // Uncomment for debugging only
             //foreach (var item in response.Headers)
@@ -48,7 +58,7 @@ namespace ZippyClippy
             var writePath = Path.Combine(desktopFolder, "Output.zip");
 
             // Write file to disk
-            //File.WriteAllBytes(writePath, response.RawBytes);
+            File.WriteAllBytes(writePath, response.RawBytes);
             Console.WriteLine(writePath);
         }
         private void ChooseButton_Click(object sender, EventArgs e)
